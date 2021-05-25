@@ -5,7 +5,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from common.two_layer_net import TwoLayerNet
 import random
-
+from sklearn.metrics import accuracy_score
 
 
     #obtener datos del URL
@@ -104,7 +104,10 @@ def aprender(url,Xin):
     plt.xlim(0, iters_num)
     plt.ylim(0,1)
     plt.show()
-
+    
+    exactitud1=accuracy_score(Xtest,Ttest)*100
+    print('Exactitud del modelo: ',exactitud1,' %')
+    
     return network.devolverParametros()
 
 
@@ -128,3 +131,7 @@ f = open("ParametrosIA.txt","w")
 Xin = np.array([[0,0,0,0,0,0],[0.5,0.5,0.5,0.25,0.1,0],[1,1,1,1,1,1]], dtype = float)
 (W1,W2,b1,b2) = aprender(url,Xin)
 print(W1,W2,b1,b2)
+
+
+
+
