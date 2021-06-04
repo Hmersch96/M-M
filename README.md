@@ -1,2 +1,4 @@
 # M&M
- Este duo va a trabajar con la catedra de probabilidad y estadistica
+La carpeta "Clases "contiene el contenido desarrollado en las clases (esto aun requiere de ciertas modificaciones)
+La carpeta "Proyecto 1er Parcial" contiene al proyecto presentado para el primer parcial
+La carpeta "Proyecto 2do Parcial" contiene al proyecto presentado para el segundo parcial
